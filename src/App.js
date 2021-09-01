@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header'
+import Daily from './components/Header/Daily-Weather/Daily'
+import Taskbar from './components/Header/Taskbar/Taskbar'
+import Background from './components/Header/Background/Background';
+import { Stack, HStack, VStack } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="App-header">
+      <Taskbar></Taskbar>
+      <Header></Header>
+      <Daily></Daily>
     </div>
+
   );
 }
 
